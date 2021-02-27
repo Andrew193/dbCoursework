@@ -9,7 +9,7 @@ import { Route } from "react-router"
 function MainContent(props) {
     return (
         <>
-            <Nav t={props.t} />
+            <Nav t={props.t} colorMode={props.colorMode}/>
             <Route exact path="/" render={() => <MainPage t={props.t} />} />
             <Route exact path="/news" render={() => <News t={props.t} />} />
             <Route exact path="/contact" render={() => <Contact t={props.t} />} />

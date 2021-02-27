@@ -12,6 +12,9 @@
     position: fixed;
     z-index: 1;
 }
+.colorMode{
+    color: white;
+}
 .Navbar >ul{
     list-style-type: none;
     display: flex;

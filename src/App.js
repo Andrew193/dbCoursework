@@ -8,9 +8,11 @@ import MainContent from "./components/MainContent/MainContent"
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
 import Form from "./components/RegAndLog/regAndLog"
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 function App() {
   const { t } = useTranslation();
+  const colorMode=useSelector((state)=>state.colorMode.mode)
   const notify = () => toast("Операция успешна!");
   const Formik=useFormik({
     initialValues:{
@@ -32,8 +34,8 @@ function App() {
   })
   const [logIn,setLogIn]=useState(JSON.parse(localStorage.getItem("user"))?.Flag ||false)
   return (
-    <div className="App">
-     {logIn?<MainContent t={t} />:<Form Formik={Formik} />}
+    <div className={!colorMode?"App":"App NightMode"}>
+     {logIn?<MainContent t={t} colorMode={colorMode} />:<Form Formik={Formik} />}
       <ToastContainer toastStyle={{background:"black",borderRadius:"15px"}} hideProgressBar={true} autoClose={2000} position="top-center"/>
     </div>
   );

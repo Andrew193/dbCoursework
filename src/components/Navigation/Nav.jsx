@@ -8,12 +8,16 @@ function Nav(props) {
     return (
         <nav className={s.Navbar}>
             <ul>
-                <li><NavLink exact to={"/"} activeClassName={s.activeLink}>{props.t("nav.main")}</NavLink></li>
-                <li><NavLink exact to={"/about"} activeClassName={s.activeLink}>{props.t("nav.about")}</NavLink></li>
-                <li><NavLink exact to={"/news"} activeClassName={s.activeLink}>{props.t("nav.news")}</NavLink></li>
-                <li><NavLink exact to={"/contact"} activeClassName={s.activeLink}>{props.t("nav.contacts")}</NavLink></li>
+                <li><NavLink exact to={"/"} activeClassName={s.activeLink}
+                className={props.colorMode?s.colorMode:""}>{props.t("nav.main")}</NavLink></li>
+                <li><NavLink exact to={"/about"} activeClassName={s.activeLink}
+                 className={props.colorMode?s.colorMode:""}>{props.t("nav.about")}</NavLink></li>
+                <li><NavLink exact to={"/news"} activeClassName={s.activeLink}
+                 className={props.colorMode?s.colorMode:""}>{props.t("nav.news")}</NavLink></li>
+                <li><NavLink exact to={"/contact"} activeClassName={s.activeLink}
+                 className={props.colorMode?s.colorMode:""}>{props.t("nav.contacts")}</NavLink></li>
             </ul>
-            <ChangeLg changeLanguage={changeLanguage} t={props.t}/>
+            <ChangeLg changeLanguage={changeLanguage} colorMode={props.colorMode} t={props.t}/>
         </nav>
     )
 }
