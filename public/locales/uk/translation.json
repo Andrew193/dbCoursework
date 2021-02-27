@@ -1,11 +1,14 @@
 {
-    "title": "Internationalizing with i18next",
+    "title": "Загальна інформація",
     "description": {
       "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
       "part2": "Switch language between english and russian using buttons above."
     },
     "nav":{
       "main":"Головна сторінка",
-      "about":"Про компанію"
+      "about":"Про компанію",
+      "cgLg":"Перекласти",
+      "news":"Новини",
+      "contacts":"Контакти"
     }
   }

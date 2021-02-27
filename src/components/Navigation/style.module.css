@@ -4,7 +4,7 @@
 .Navbar{
     grid-area: nav;
     width: 100%;
-    min-height: 100px;
+    min-height: 7%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -24,10 +24,37 @@ nav{
     display: flex;
     justify-content: space-evenly;
 }
+nav>button{
+    padding: 5px 7px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: all ease 0.7s;
+    border: 1px solid black;
+}
+nav>button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+}
 a{
     text-decoration: none;
-    color: black
+    color: black;
+    transition: all ease 0.7s;
 }
 option{
     cursor: pointer;
+}
+.ToggleLg{
+    padding: 7px 13px;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease 0.7s;
+}
+.ToggleLg:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
 }
