@@ -6,10 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from "./redux/store"
+import Loader from "./components/Loader/Loader"
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Suspense fallback={<div>Critical error</div>}>
+      <Suspense fallback={<Loader />} >
         <Provider store={store}>
           <App />
         </Provider>

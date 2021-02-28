@@ -1,9 +1,11 @@
 
 import s from "./style.module.css"
 function Footer(props) {
-    return(
+    return (
         <div className={s.Container}>
-            test
+            <h4>
+                @ 2021 - {new Date().getFullYear() + props.t("footer.title")}
+            </h4>
         </div>
     )
 }

@@ -32,10 +32,10 @@ function App() {
       window.location.reload();
     }
   })
-  const [logIn,setLogIn]=useState(JSON.parse(localStorage.getItem("user"))?.Flag ||false)
+  const logIn=useState(JSON.parse(localStorage.getItem("user"))?.Flag ||false)[0]
   return (
     <div className={!colorMode?"App":"App NightMode"}>
-     {logIn?<MainContent t={t} colorMode={colorMode} />:<Form Formik={Formik} />}
+     {logIn?<MainContent t={t} colorMode={colorMode} />:<Form t={t} Formik={Formik} />}
       <ToastContainer toastStyle={{background:"black",borderRadius:"15px"}} hideProgressBar={true} autoClose={2000} position="top-center"/>
     </div>
   );

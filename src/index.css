@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all ease 0.7s;
 }
 body,html,#root,.App{
   height: 100%;

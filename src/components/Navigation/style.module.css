@@ -1,62 +1,73 @@
-.activeLink{
-    color: red;
+.activeLink {
+    color: red!important;
 }
-.Navbar{
+
+.Navbar {
     grid-area: nav;
     width: 100%;
     min-height: 7%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    box-shadow:0 10px 10px 0 rgb(60 64 67 / 30%), 0 5px 6px 2px rgb(60 64 67 / 15%);
     position: fixed;
     z-index: 1;
 }
-.colorMode{
+
+.colorMode {
     color: white;
 }
-.Navbar >ul{
+
+.Navbar>ul {
     list-style-type: none;
     display: flex;
     width: 70%;
     align-items: center;
     justify-content: space-around;
 }
-nav{
+
+nav {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
 }
-nav>button{
-    padding: 5px 7px;
-    outline: none;
+
+nav>button {
+    text-align: center;
+    background: linear-gradient(to right, white 50%, black 50%);
+    background-size: 200% 100%;
+    color: black;
     cursor: pointer;
-    border-radius: 15px;
-    background-color: transparent;
+    padding: 1%;
     transition: all ease 0.7s;
-    border: 1px solid black;
+    background-position: left bottom;
 }
-nav>button:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border: 1px solid rgb(255, 0, 0);
+
+nav>button:hover {
+    border: 1px solid white;
+    background-position: right bottom;
+    color: white;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
     transition: all ease 0.7s;
 }
-option{
+
+option {
     cursor: pointer;
 }
-.ToggleLg{
+
+.ToggleLg {
     padding: 7px 13px;
     border: 1px solid black;
     border-radius: 15px;
     cursor: pointer;
     transition: all ease 0.7s;
 }
-.ToggleLg:hover{
+
+.ToggleLg:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(255, 0, 0);
