@@ -6,7 +6,7 @@ function Nav(props) {
     const {i18n } = useTranslation();
     const changeLanguage = (language) => {i18n.changeLanguage(language);};
     return (
-        <nav className={s.Navbar}>
+        <nav className={props.colorMode? s.Navbar+" "+s.colorMode+" "+props.NightMode:s.Navbar}>
             <ul>
                 <li><NavLink exact to={"/"} activeClassName={s.activeLink}
                 className={props.colorMode?s.colorMode:""}>{props.t("nav.main")}</NavLink></li>

@@ -11,6 +11,7 @@
     justify-content: space-around;
     box-shadow:0 10px 10px 0 rgb(60 64 67 / 30%), 0 5px 6px 2px rgb(60 64 67 / 15%);
     position: fixed;
+    background-color: white;
     z-index: 1;
 }
 

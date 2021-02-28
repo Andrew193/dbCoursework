@@ -6,3 +6,24 @@
 .Container h4{
     padding-top: 15px;
 }
+.Mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.colorMode a{
+    color: white;
+}
+.Mail svg{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    transition: all ease 0.7s;
+}
+.Mail:hover a{
+    color: gray;
+}
+.Mail:hover svg{
+    color: gray;
+}

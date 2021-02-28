@@ -10,9 +10,11 @@ function CgLg(props) {
         {!flag?<div onClick={()=>setFlag(!flag)} className={s.ToggleLg}>{props.t("nav.cgLg")}</div>:<>
         <button className={props.colorMode?s.colorMode:""} onClick={() =>{
             setFlag(!flag)
+            dispatch({type:"changeLangMode"})
             props.changeLanguage("uk")}}>Українська</button>
         <button className={props.colorMode?s.colorMode:""} onClick={() =>{ 
             setFlag(!flag)
+            dispatch({type:"changeLangMode"})
             props.changeLanguage("ru")}}>Русский</button></>
         }
         {!flag &&<><button className={props.colorMode?s.colorMode:""} onClick={Script.leave}>{props.t("nav.changeStatus")}</button>
