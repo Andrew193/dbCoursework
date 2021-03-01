@@ -3,7 +3,7 @@
   display: grid;
   grid-template-areas: "nav" "main" "footer";
   grid-template-columns: 1fr;
-  grid-template-rows:min-content 100% min-content;
+  grid-template-rows:min-content auto min-content;
 }
 .App-logo {
   height: 40vmin;

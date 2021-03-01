@@ -14,7 +14,7 @@ function CgLg(props) {
             props.changeLanguage("uk")}}>Українська</button>
         <button className={props.colorMode?s.colorMode:""} onClick={() =>{ 
             setFlag(!flag)
-            dispatch({type:"changeLangMode"})
+            dispatch({type:"changeLangModeRu"})
             props.changeLanguage("ru")}}>Русский</button></>
         }
         {!flag &&<><button className={props.colorMode?s.colorMode:""} onClick={Script.leave}>{props.t("nav.changeStatus")}</button>

@@ -1,32 +1,49 @@
 {
-    "title": "Общая информация",
-    "description": {
-      "part1": "Чтобы начать работу, отредактируйте и сохраните файл <1>src/App.js</1>.",
-      "part2": "С помощью кнопок переключайте язык между английским и русским."
-    },
-    "nav":{
-      "main":"Главная страница",
-      "about":"О компании",
-      "cgLg":"Перевести",
-      "news":"Новости",
-      "contacts":"Контакты",
-      "changeStatus":"Выйти из системы",
-      "colorMode":"Изменить цветовую гамму"
-    },
-    "footer":{
-      "title":" Андрей Садовинский. Все права защищены.",
-      "request":"Если у Вас возникли вопросы задайте их нам!",
-      "form":{
-        "title":"Задать вопрос в службу поддержки",
-        "closeButton":"Отправить",
-        "field1":"Изложите суть вопроса!",
-        "field2":"Введите E-mail для обратной связи!"
-      }
-    },
-    "form":{
-      "reg":"Зарегистрироваться",
-      "log":"Войти",
-      "field1":"Имя",
-      "field2":"Пароль"
+  "title": "Общая информация",
+  "description": {
+    "part1": "Издательство Квадратное Солнце",
+    "part2": "Издательство Квадратное Солнце было основано в 1999 году и к настоящему времени превратилось в одно из крупнейших издательств в Украине с серьезным портфелем выполненных проектов за плечами. Богатая история, крепкие традиции, инновационный комплексный подход к решению задач клиентов и реальная забота об результате являются основой успеха компании и позволяют ей динамично развиваться, постоянно расширяя перечень предоставляемых услуг и повышая их качество.",
+    "part3": "Услуги Издательства",
+    "part4": "Все многообразие услуг, оказываемых типографией, можно разделить на несколько направлений. Долгое время одной из основных сфер деятельности являлась распечатка брошюр на заказ. Позднее акцент стал смещаться в сторону производства газет, визиток и открыток, а сейчас эти направления приблизительно одинаковы по объему и вместе составляют около 90% всех заказов компании. Остальные 10% делятся между другими типографическими услугами.",
+    "part5": "Отдельным направлением работы компании является разработка собственных продуктов. Это направление на данный момент является скорее прикладным и развивается в основном в рамках работы над крупными заказами. Результатом деятельности в этом направлении стало множесто разлмчный статей и журналов.",
+    "part6": "Почему Мы?",
+    "part7": "Наши консультанты – практики с богатым опытом. Они точно знают чего вы хотите. У каждого в копилке не один десяток выполненых заказов, и в каждой что-то свое, новое. Кроме того, наши консультанты все имеют опыт работы внутри предприятия, каждый был или начальником службы качества, или менеджером по качеству.",
+    "part8": "Lorem Ipsum",
+    "part9":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus optio reiciendis voluptatibus obcaecati velit voluptates ab deserunt ipsa, impedit fugiat sunt libero ratione eum! Ab quidem nobis dolorum! Vero, dolorum. Laboriosam commodi debitis, cumque at tenetur libero, illum illo, assumenda reprehenderit voluptates excepturi unde. Ex ipsum corporis dolores nisi esse quis at voluptas explicabo! Tempora at enim porro provident rerum?     Totam nesciunt soluta veritatis eveniet impedit reprehenderit minima. Ab tenetur quo cum voluptatibus fugit nostrum cumque, eaque aut odit labore velit, ratione ipsa. Voluptatum repellat consectetur voluptatem ipsa dolores officia. Vero, necessitatibus reiciendis commodi id placeat cumque maxime explicabo dolorum quia dolore tempore deserunt dolorem facilis quasi optio quaerat voluptatum? Deleniti, sequi temporibus itaque quaerat debitis alias consectetur obcaecati eaque."
+  },
+  "nav": {
+    "main": "Главная страница",
+    "about": "О компании",
+    "cgLg": "Перевести",
+    "news": "Новости",
+    "contacts": "Контакты",
+    "changeStatus": "Выйти из системы",
+    "colorMode": "Изменить цветовую гамму"
+  },
+  "footer": {
+    "title": " Андрей Садовинский. Все права защищены.",
+    "request": "Если у Вас возникли вопросы задайте их нам!",
+    "form": {
+      "title": "Задать вопрос в службу поддержки",
+      "closeButton": "Отправить",
+      "field1": "Изложите суть вопроса!",
+      "field2": "Введите E-mail для обратной связи!"
     }
+  },
+  "form": {
+    "reg": "Зарегистрироваться",
+    "log": "Войти",
+    "field1": "Имя",
+    "field2": "Пароль"
+  },
+  "navigation":{
+    "top":"Вверх!",
+    "bottom":"Вниз!"
+  },
+  "about":{
+    "title":"О нас",
+    "modal":"Нажмите для закрытия",
+    "close":"Закрыть",
+    "tip":"Хотите увеличить?"
   }
+}

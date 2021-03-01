@@ -40,7 +40,7 @@ function App() {
   return (
     <div className={!colorMode ? "App" : "App NightMode"}>
       {logIn ? <MainContent t={t} colorMode={colorMode} NightMode={"NightMode"} /> : <Form t={t} Formik={Formik} />}
-      <ToastContainer toastStyle={{ background: "black", borderRadius: "15px" }} hideProgressBar={true} autoClose={2000}
+      <ToastContainer toastStyle={{ background: "black", borderRadius: "15px" }} hideProgressBar={true} autoClose={5000}
         position="top-center" />
       
     </div>

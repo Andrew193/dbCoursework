@@ -1,4 +1,72 @@
 .Container{
     grid-area: main;
-    padding-top: 55px;
+    padding: 55px 10% 0px 10%;
+    text-align: left;
+    background-color: white;
+}
+.firstLine{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Modal{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.Modal img{
+    cursor: pointer;
+    height: 75%;
+}
+.ModalHide{
+    visibility: hidden;
+}
+.firstLine p{
+    padding: 10px;
+}
+.firstLine img{
+    height: 400px;
+    width: 500px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease 0.7s;
+}
+.firstLine img:hover{
+    height: 450px;
+    width: 550px;
+}
+.Nimg{
+    box-shadow: 1px 0px 13px 7px rgba(255, 255, 255, 0.2);
+}
+.Limg{
+    box-shadow: 1px 0px 13px 7px rgba(0, 0, 0, 0.2);
+}
+.firstLine>section{
+    position: relative;
+    padding: 10px;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+}
+.firstLine>section::after{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: rgb(0, 255, 170);
+    width: 100%;
+    top: 0;
+}
+.firstLine>section:nth-child(2n){
+    display: flex;
+    text-align: left;
+}
+.firstLine>section:nth-child(2n+1){
+    display: flex;
+    text-align: right;
 }
