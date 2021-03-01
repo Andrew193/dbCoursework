@@ -3,7 +3,7 @@ let initState=(JSON.parse(localStorage.getItem("langMode"))?.mode)?
 function Reducer(state=initState,action) {
     switch (action.type) {
         case "changeLangMode":{
-            localStorage.setItem("langMode",JSON.stringify({mode:(state.mode=="uk"?"ru":"uk")}))
+            localStorage.setItem("langMode",JSON.stringify({mode:(state.mode==="uk"?"ru":"uk")}))
             return JSON.parse(JSON.stringify(JSON.parse(localStorage.getItem("langMode"))))
         }
         default:

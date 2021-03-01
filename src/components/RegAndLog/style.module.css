@@ -9,11 +9,13 @@
     align-items: center;
     justify-content: center;
 }
-form{
+.Container form{
     padding: 25px 20px;
-    height: 35%;
+    height:fit-content;
     border-radius: 15px;
     background-color: white;
+    max-width:70%;
+    transition: all ease 0.7s;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -24,10 +26,17 @@ input{
     border-radius: 10px;
     border: 1px solid black;
 }
+.Error{
+    border: 1px solid red;
+    border-radius: 15px;
+    margin: 5px;
+}
 button{
+    width:fit-content;
     outline: none;
     border-radius: 15px;
     border: 1px solid black;
+    margin: 5px;
     cursor: pointer;
     padding: 10px 15px;
     font-size: 16px;

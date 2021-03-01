@@ -61,11 +61,14 @@ option {
 }
 
 .ToggleLg {
-    padding: 7px 13px;
+    margin: 7px 13px;
     border: 1px solid black;
     border-radius: 15px;
     cursor: pointer;
     transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    padding: 7px;
 }
 
 .ToggleLg:hover {
