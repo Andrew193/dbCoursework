@@ -1,6 +1,6 @@
 let clone=null
 const script={
-    showMore:(e,moreBlock,setFlag,t,flag)=>{
+    showMore:(e,moreBlock,setFlag,t,flag,s)=>{
         clone=e.target.cloneNode(true)
         clone.setAttribute("title",t("about.modal"))
         moreBlock.appendChild(clone)
