@@ -18,10 +18,10 @@
     display: flex;
     justify-content: space-around;
 }
-.Contacts a{
+.Contacts li a{
     color: white;
 }
-.Contacts a:hover{
+.Contacts li:hover>a{
     color: gray;
     font-size: 20px;
 }
