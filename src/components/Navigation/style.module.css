@@ -1,7 +1,12 @@
 .activeLink {
     color: red!important;
 }
-
+.Logo{
+    left: 2%;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+}
 .Navbar {
     grid-area: nav;
     width: 100%;

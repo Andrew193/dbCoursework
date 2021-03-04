@@ -1,0 +1,7 @@
+.Container{
+    grid-area: main;
+    padding: 5% 10% 2% 10%;
+    text-align: left;
+    background-color: white;
+    text-align: center;
+}
