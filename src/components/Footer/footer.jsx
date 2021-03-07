@@ -1,5 +1,5 @@
+import { useState } from "react";
 import { MdMail } from "react-icons/md";
-import { useState } from "react/cjs/react.development";
 import s from "./style.module.css"
 function Footer(props) {
     const [flag, setFlag] = useState(false)

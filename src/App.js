@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useFormik } from 'formik';
 import Valid from "./formValidator"
 import Errors from "./errorMessages"
+import Script from "./script/logRegPerson"
 import MainContent from "./components/MainContent/MainContent"
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
@@ -27,16 +28,35 @@ function App() {
       return errors
     },
     onSubmit: (values, { resetForm }) => {
-      localStorage.setItem("user", JSON.stringify({ Name: values.name, Flag: true }))
-      notify()
-      resetForm()
-      window.location.reload();
+      if (JSON.parse(localStorage.getItem("regMode")).Flag) {
+        Script.Reg(values.name, values.password).then((parametr) => {
+          if (parametr.done) {
+            localStorage.setItem("user", JSON.stringify({ Name: values.name, Flag: true }))
+            notify()
+            resetForm()
+            window.location.reload();
+          } else {
+            resetForm()
+          }
+        })
+      } else{
+        Script.Log(values.name, values.password).then((parametr) => {
+          if (parametr.done) {
+            localStorage.setItem("user", JSON.stringify({ Name: values.name, Flag: true }))
+            notify()
+            resetForm()
+            window.location.reload();
+          } else {
+            resetForm()
+          }
+        })
+      }
     }
   })
   const logIn = useState(JSON.parse(localStorage.getItem("user"))?.Flag || false)[0]
   useEffect(() => {
     i18n.changeLanguage(langMode)
-  }, [i18n,langMode])
+  }, [i18n, langMode])
   return (
     <div className={!colorMode ? "App" : "App NightMode"}>
       {logIn ? <MainContent t={t} colorMode={colorMode} NightMode={"NightMode"} /> : <Form t={t} Formik={Formik} />}
