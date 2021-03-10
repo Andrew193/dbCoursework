@@ -51,6 +51,7 @@ function App() {
           }
         })
       }
+      localStorage.removeItem("regMode")
     }
   })
   const logIn = useState(JSON.parse(localStorage.getItem("user"))?.Flag || false)[0]
@@ -59,8 +60,8 @@ function App() {
   }, [i18n, langMode])
   return (
     <div className={!colorMode ? "App" : "App NightMode"}>
-      {logIn ? <MainContent t={t} colorMode={colorMode} NightMode={"NightMode"} /> : <Form t={t} Formik={Formik} />}
-      <ToastContainer toastStyle={{ background: "black", borderRadius: "15px" }} hideProgressBar={true} autoClose={5000}
+      {logIn ? <MainContent t={t} colorMode={colorMode} notify={notify} NightMode={"NightMode"} /> : <Form t={t} Formik={Formik} />}
+      <ToastContainer toastStyle={{ background: "black", borderRadius: "15px" }} hideProgressBar={true} autoClose={2000}
         position="top-center" />
     </div>
   );

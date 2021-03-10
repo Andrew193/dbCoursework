@@ -16,3 +16,9 @@
 .NightMode button{
   color: black;
 }
+@media (max-width:570px){
+  button{
+    font-size: 10px!important;
+    margin: 10px!important;
+  }
+}

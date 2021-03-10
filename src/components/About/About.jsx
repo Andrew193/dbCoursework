@@ -1,11 +1,10 @@
 import im from "./img/first.jpg"
-import React from "react"
+import React, { useState } from "react"
 import im2 from "./img/second.jpg"
 import im3 from "./img/third.webp"
 import im4 from "./img/4.jpg"
 import Script from "./script"
 import s from "./style.module.css"
-import { useState } from "react/cjs/react.development"
 function About(props) {
     const [flag,setFlag]=useState(false)
     let moreBlock=React.createRef()

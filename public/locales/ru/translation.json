@@ -11,6 +11,18 @@
     "part8": "Lorem Ipsum",
     "part9":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus optio reiciendis voluptatibus obcaecati velit voluptates ab deserunt ipsa, impedit fugiat sunt libero ratione eum! Ab quidem nobis dolorum! Vero, dolorum. Laboriosam commodi debitis, cumque at tenetur libero, illum illo, assumenda reprehenderit voluptates excepturi unde. Ex ipsum corporis dolores nisi esse quis at voluptas explicabo! Tempora at enim porro provident rerum?     Totam nesciunt soluta veritatis eveniet impedit reprehenderit minima. Ab tenetur quo cum voluptatibus fugit nostrum cumque, eaque aut odit labore velit, ratione ipsa. Voluptatum repellat consectetur voluptatem ipsa dolores officia. Vero, necessitatibus reiciendis commodi id placeat cumque maxime explicabo dolorum quia dolore tempore deserunt dolorem facilis quasi optio quaerat voluptatum? Deleniti, sequi temporibus itaque quaerat debitis alias consectetur obcaecati eaque."
   },
+  "ourItems":{
+    "FormCom":"Заказать из имеющегося",
+    "FormUn":"Заказать уникальное издание",
+    "Form1title":"Сделайте свой выбор",
+    "Form1C":"Что вас интерисует?",
+    "Form2C":"В каком количестве?",
+    "Form3C":"Данные доставки",
+    "Form4P":"Адрес",
+    "Form5P":"Дата",
+    "Form51P":"Контактное лицо",
+    "Send":"Отправить"
+  },
   "nav": {
     "main": "Главная страница",
     "about": "О компании",
@@ -18,7 +30,12 @@
     "news": "Новости",
     "contacts": "Контакты",
     "changeStatus": "Выйти из системы",
-    "colorMode": "Изменить цветовую гамму"
+    "colorMode": "Изменить цветовую гамму",
+    "ouritems":"Товары",
+    "item":{
+      "part1":"Издание называется ",
+      "part2":"a его автор "
+    }
   },
   "footer": {
     "title": " Андрей Садовинский. Все права защищены.",
@@ -27,7 +44,9 @@
       "title": "Задать вопрос в службу поддержки",
       "closeButton": "Отправить",
       "field1": "Изложите суть вопроса!",
-      "field2": "Введите E-mail для обратной связи!"
+      "field2": "Введите E-mail для обратной связи!",
+      "field3":"Топик был создан",
+      "field4":"Топик создан не был"
     }
   },
   "form": {

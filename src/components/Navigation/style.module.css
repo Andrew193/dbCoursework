@@ -2,7 +2,7 @@
     color: red!important;
 }
 .Logo{
-    left: 2%;
+    left: 1%;
     position: absolute;
     height: 25px;
     width: 25px;
@@ -18,6 +18,7 @@
     position: fixed;
     background-color: white;
     z-index: 1;
+    flex-wrap: wrap;
 }
 
 .colorMode {
@@ -27,15 +28,16 @@
 .Navbar>ul {
     list-style-type: none;
     display: flex;
-    width: 70%;
+    min-width: 50%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex: auto;
 }
 
 nav {
-    width: 30%;
     display: flex;
     justify-content: space-evenly;
+    flex: auto;
 }
 
 nav>button {
@@ -81,3 +83,14 @@ option {
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(255, 0, 0);
 }
+
+@media (max-width:700px){
+    .Logo{
+      display:none;
+    }
+  }
+  @media (max-width:500px){
+      .Navbar{
+        font-size: 12px;
+      }
+  }

@@ -1,14 +1,61 @@
 const Express = require("express")
 const MySql = require("mysql2")
 const path =require("path")
+var { graphqlHTTP } = require('express-graphql');
+var { buildSchema } = require('graphql');
 const App=Express();
-const jsonParser = Express.json()
+//   getPerson(id:Int):Person,
 const Connection=MySql.createConnection({
     host: "localhost",
     database: "dbcoursework",
     password: "radeongraphics",
     user: "root",
 }).promise();
+var schema = buildSchema(`
+  type Query {
+    getNews:[News],
+    getItems:[Items],
+    getSelectedNews(number:Int):News
+  }
+  type News{
+      title:String,
+      date:String,
+      message:String
+  }
+  type Items{
+      Name:String,
+      AuthorName:String
+  }
+  `);
+var root = {
+    getNews: () =>
+     Connection.query("SELECT * FROM news").
+     then((result,error)=>{
+        if(!error && result[0].length!=0)
+        return result[0]
+     }),
+     getItems: () =>
+     Connection.query("SELECT * FROM production").
+     then((result,error)=>{
+        if(!error && result[0].length!=0)
+        return result[0]
+     }),
+     getSelectedNews:(params)=>
+     Connection.query(`select * from news where idnews="${params.number}"`).
+     then((result,error)=>{
+        if(!error && result[0].length!=0)
+        return result[0][0]
+     }),
+     rest:()=>{
+         console.log("test");
+     }
+};
+App.use('/getinfo', graphqlHTTP({
+    schema: schema,
+    rootValue: root,
+    graphiql: true,
+}));
+const jsonParser = Express.json()
 App.use(Express.static(path.join(__dirname, "..", "build")));
 App.use(Express.static("public"))
 App.use(jsonParser)
@@ -24,6 +71,32 @@ App.get("/LogPerson?*",(req,res)=>{
             res.json({"done":false})
         } else res.json({"done":true})
     })
+})
+App.post("/makeOrOrder",(req,res)=>{
+    Connection.query(`INSERT INTO ordinaryorders(itemName, count, address, date, person)
+    values(?,?,?,?,?)`,[req.body.itemName,req.body.count,req.body.address,
+    req.body.date,req.body.person]).then((result,error)=>{
+        if(error ||result[0].length==0){
+            res.json({"done":false})
+        } else res.json({"done":true})
+    })
+})
+App.post("/makeUnOrder",(req,res)=>{
+    Connection.query(`INSERT INTO unordinaryorders(itemName, count, address, date, person)
+    values(?,?,?,?,?)`,[req.body.itemName,req.body.count,req.body.address,
+    req.body.date,req.body.person]).then((result,error)=>{
+        if(error ||result[0].length==0){
+            res.json({"done":false})
+        } else res.json({"done":true})
+    })
+})
+App.post("/sendResponse",(req,res)=>{
+   Connection.query("INSERT INTO questions(message,feedback) values(?,?)",Object.values(req.body)).then((result,error)=>{
+       if(error)
+       res.json({"done":false})
+       else 
+       res.json({"done":true})
+   })
 })
 
 

@@ -4,6 +4,17 @@
     text-align: left;
     background-color: white;
 }
+@media (max-width:970px){
+    .Container{
+        padding: 12% 10% 2% 10% !important;
+    }
+    }
+    @media (max-width:490px){
+        .Container{
+            font-size:12px;
+            padding: 15% 10% 2% 10% !important;
+        }
+      }
 .Container p{
     margin: 5px 15px;
 }

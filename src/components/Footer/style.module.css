@@ -1,25 +1,30 @@
-.Container{
+.Container {
     grid-area: footer;
     box-shadow: 0 -5px 15px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
     min-height: 50px;
 }
-.Container button{
+
+.Container button {
     margin: 7px;
     width: fit-content;
 }
-.Container h4{
+
+.Container h4 {
     padding-top: 15px;
 }
-.Mail{
+
+.Mail {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px 10px;
 }
-.colorMode a{
+
+.colorMode a {
     color: white;
 }
-.Modal{
+
+.Modal {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -28,7 +33,8 @@
     opacity: 0.7;
     top: 0;
 }
-.ModalContent{
+
+.ModalContent {
     border-radius: 15px;
     top: 0;
     padding: 2%;
@@ -42,21 +48,31 @@
     justify-content: end;
     align-items: center;
 }
-.ModalContent textarea{
+
+.ModalContent textarea {
     width: 100%;
     height: 35%;
     outline: none;
     resize: none;
 }
-.Mail svg{
+
+.Mail svg {
     margin-right: 5px;
     height: 20px;
     width: 20px;
     transition: all ease 0.7s;
 }
-.Mail:hover a{
+
+.Mail:hover a {
     color: gray;
 }
-.Mail:hover svg{
+
+.Mail:hover svg {
     color: gray;
+}
+
+@media (max-width: 500px) {
+    .Container {
+        font-size: 12px;
+    }
 }
