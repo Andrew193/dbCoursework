@@ -15,7 +15,7 @@ function App() {
   const { t, i18n } = useTranslation();
   const colorMode = useSelector((state) => state.colorMode.mode)
   const langMode = useSelector((state) => state.lgMode.mode)
-  const notify = () => toast("Операция успешна!");
+  const notify = () => toast(t("ok"));
   const Formik = useFormik({
     initialValues: {
       name: "",

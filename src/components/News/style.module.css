@@ -24,6 +24,7 @@
     box-shadow: 0 5px 0 #777b7d;
     max-height: 150px;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 .Light {
     background-color: white;

@@ -4,23 +4,27 @@ const path =require("path")
 var { graphqlHTTP } = require('express-graphql');
 var { buildSchema } = require('graphql');
 const App=Express();
-//   getPerson(id:Int):Person,
 const Connection=MySql.createConnection({
     host: "localhost",
     database: "dbcoursework",
     password: "radeongraphics",
     user: "root",
 }).promise();
-var schema = buildSchema(`
+const schema = buildSchema(`
   type Query {
     getNews:[News],
     getItems:[Items],
-    getSelectedNews(number:Int):News
+    getSelectedNews(number:Int):News,
+    getAllPerson(name:String):[Person]
   }
   type News{
       title:String,
       date:String,
       message:String
+  }
+  type Person{
+    FullName:String, 
+    Password:String
   }
   type Items{
       Name:String,
@@ -46,9 +50,19 @@ var root = {
         if(!error && result[0].length!=0)
         return result[0][0]
      }),
-     rest:()=>{
-         console.log("test");
-     }
+     getAllPerson:(params)=>{
+     if(!params.name){
+     return Connection.query("SELECT * FROM players").
+     then((result,error)=>{
+        if(!error && result[0].length!=0)
+        return result[0]
+     })} 
+         return Connection.query(`SELECT * FROM players WHERE FullName="${params.name}"`).
+         then((result,error)=>{
+            if(!error && result[0].length!=0)
+            return result[0]
+         })
+    }
 };
 App.use('/getinfo', graphqlHTTP({
     schema: schema,
@@ -98,7 +112,14 @@ App.post("/sendResponse",(req,res)=>{
        res.json({"done":true})
    })
 })
-
+App.post("/makeNews",(req,res)=>{
+    Connection.query("INSERT INTO news(title, date, message) values(?,?,?)",Object.values(req.body)).then((result,error)=>{
+        if(error)
+        res.json({"done":false})
+        else 
+        res.json({"done":true})
+    })
+})
 
 App.use((req, res, next) => {
     res.sendFile(path.join(__dirname, "..", "build", "index.html"))
