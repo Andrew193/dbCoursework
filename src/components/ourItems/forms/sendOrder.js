@@ -14,6 +14,14 @@ const obj={
         notify(t("footer.form.field4"))
 
         resetForm()
-    })
+    }),
+    ToRound:function decimalAdjust(value) {
+        if(value%10!=0){
+            while (value%10!=0) 
+                value+=1
+        }
+        
+        return value/10
+      }
 }
 export default obj;

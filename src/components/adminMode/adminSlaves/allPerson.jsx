@@ -4,7 +4,7 @@ import Loader from "../../Loader/Loader"
 import MakePersons from "./makePersons"
 function AllPerson(props) { 
     const name=(props.name||"")
-    console.log(`name:${name}`);
+    console.log(`was:${name}`);
     const { loading, error, data } = useQuery(gql`{
         data : getAllPerson (name:"${name}"){
             FullName

@@ -20,6 +20,10 @@
 .colorMode{
     color: white;
 }
+.NewsItem{
+    margin: 5% 0px 2% !important;
+    padding: 1%;
+}
 .NewsItem:nth-child(2n){
     border-radius: 10px 20px;
 }
@@ -45,6 +49,12 @@
 @media (max-width:970px) {
     .Container {
         padding: 12% 10% 2% 10% !important;
+    }
+}
+
+@media (min-width:970px){
+    .NewsItem{
+        margin: 2% 0px 2% !important;
     }
 }
 

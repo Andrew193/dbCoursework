@@ -28,7 +28,7 @@ function MakeNews(props) {
             </div>
             <h2 onClick={(e)=>Script.show(e,s,notify,props.t)}>{props.t("admin.showByName")}</h2>
             <div >
-                <input type="text" id="name"/><button onClick={()=>setFlag2(!flag)}>{props.t("search")}</button>
+                <input type="text" id="name"/><button onClick={()=>setFlag2(!flag2)}>{props.t("search")}</button>
                 {flag2 && <AllPerson name={document.getElementById("name").value} t={props.t}/>}
             </div>
         </div>

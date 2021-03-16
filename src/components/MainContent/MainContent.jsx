@@ -12,6 +12,7 @@ import OurItems from "../ourItems/ourItems"
 import SelectedNews from "../News/selectedNews"
 import ComForm from "../ourItems/forms/ComForm"
 import UnForm from "../ourItems/forms/UnForm"
+import Authors from "../Authors/Authors"
 function MainContent(props) {
     return (
         <>
@@ -27,6 +28,7 @@ function MainContent(props) {
             <Route exact path="/news/*" render={()=><SelectedNews t={props.t} notify={props.notify} colorMode={props.colorMode} NightMode={"NightMode"}/>} />
             <Route exact path="/ourItems/regCom" render={()=><ComForm t={props.t} colorMode={props.colorMode} NightMode={"NightMode"}/>} />
             <Route exact path="/ourItems/regUn" render={()=><UnForm t={props.t} colorMode={props.colorMode} NightMode={"NightMode"}/>} />
+            <Route exact path="/ourItems/authors" render={()=><Authors t={props.t} colorMode={props.colorMode} NightMode={"NightMode"}/>} />
             <Footer t={props.t} colorMode={props.colorMode} NightMode={"NightMode"}/>
         </>
     )
