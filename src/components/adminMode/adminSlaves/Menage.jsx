@@ -6,9 +6,8 @@ import s from "../style.module.css"
 import AllPerson from "./allPerson"
 import MForm from "./menageForm"
 function MakeNews(props) {
-    const[flag,setFlag]=useState(false)
-    const[flag2,setFlag2]=useState(false)
-    const Formik = useFormik({
+    const[flag,setFlag]=useState(false),[flag2,setFlag2]=useState(false),
+    Formik = useFormik({
         initialValues: {
           title: "",
           date:"",

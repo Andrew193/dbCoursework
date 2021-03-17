@@ -21,7 +21,6 @@ function ComForm(props) {
           person:""
         },
         onSubmit: (values, { resetForm }) => {
-            console.log(values);
             Script.Ord(notify,values,props.t,resetForm,"/makeOrOrder")
       }})
     return (

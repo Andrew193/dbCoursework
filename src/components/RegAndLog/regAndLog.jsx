@@ -1,4 +1,4 @@
-
+import Script from "./script"
 import s from "./style.module.css"
 function RegAndLog(props) {
     return (
@@ -12,10 +12,8 @@ function RegAndLog(props) {
                     <input type="password" id="password" {...props.Formik.getFieldProps("password")} />
                     {props.Formik.touched.password && props.Formik.errors.password &&<p className={s.Error}>{props.Formik.errors.password}</p>}
                 </label>
-                <button type="submit" className="MainFormButton" onClick={()=>  
-                localStorage.setItem("regMode", JSON.stringify({Flag: true }))}>{props.t("form.reg")}</button>
-                <button type="submit" className="MainFormButton" onClick={()=>  
-                localStorage.setItem("regMode", JSON.stringify({Flag: false }))}>{props.t("form.log")}</button>
+                <button type="submit" className="MainFormButton" onClick={()=>Script.reg(true)}>{props.t("form.reg")}</button>
+                <button type="submit" className="MainFormButton" onClick={()=>Script.reg(false)}>{props.t("form.log")}</button>
             </form>
         </div>
     )

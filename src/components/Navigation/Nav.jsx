@@ -4,8 +4,7 @@ import s from "./style.module.css"
 import { BsFillBrightnessHighFill } from "react-icons/bs";
 import ChangeLg from "./changeLg/changeLg"
 function Nav(props) {
-    const { i18n } = useTranslation();
-    const changeLanguage = (language) => { i18n.changeLanguage(language); };
+    const { i18n } = useTranslation(),changeLanguage = (language) => { i18n.changeLanguage(language); };
     return (
         <nav className={props.colorMode ? s.Navbar + " " + s.colorMode + " " + props.NightMode : s.Navbar}>
             <ul>

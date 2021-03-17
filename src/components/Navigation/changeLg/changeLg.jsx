@@ -3,8 +3,7 @@ import { useDispatch } from "react-redux";
 import s from "../style.module.css"
 import Script from "./script"
 function CgLg(props) {
-    const [flag,setFlag]=useState(false)
-    const dispatch=useDispatch()
+    const [flag,setFlag]=useState(false),dispatch=useDispatch()
     return(
         <nav>
         {!flag?<div onClick={()=>setFlag(!flag)} className={s.ToggleLg}>{props.t("nav.cgLg")}</div>:<>

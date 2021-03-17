@@ -6,9 +6,7 @@ import { toast } from 'react-toastify';
 import { useTranslation } from "react-i18next";
 const notify = (message) => toast(`${message}!`);
 function Footer(props) {
-    
-    const { t } = useTranslation();
-    const [flag, setFlag] = useState(false)
+    const { t } = useTranslation(),[flag, setFlag] = useState(false)
     return (<>
         <div className={props.colorMode ? s.Container + " " + s.colorMode + " " + props.NightMode : s.Container}>
             <h4>

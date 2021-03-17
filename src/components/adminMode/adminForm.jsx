@@ -1,6 +1,3 @@
-
-import s from "./style.module.css"
-
 function AdminForm(props) {
 
     return (

@@ -18,6 +18,7 @@ const obj={
     show:(e,s,notify,t)=>{
         notify(t("ok"))
         e.target.nextSibling.classList.toggle(`${s.Open}`)
-    }
+    },
+    comp:(e,password,dispatch)=>{if(e.target.value===password)dispatch({"type":"setAdmin"})}
 }
 export default obj;

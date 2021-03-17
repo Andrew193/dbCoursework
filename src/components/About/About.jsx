@@ -9,8 +9,8 @@ function About(props) {
     const [flag,setFlag]=useState(false)
     let moreBlock=React.createRef()
     return (<>
-    <div className={flag?s.Modal:s.Modal+" "+s.ModalHide} ref={(el)=>moreBlock=el}><button onClick={()=>
-    Script.remove(flag,setFlag)}>{props.t("about.close")}</button></div>
+    <div className={flag?s.Modal:s.Modal+" "+s.ModalHide} ref={(el)=>moreBlock=el}>
+    <button onClick={()=>{ Script.remove(flag,setFlag)}}>{props.t("about.close")}</button></div>
         <div className={props.colorMode ? s.Container + " " + props.NightMode : s.Container}>
             <h1>{props.t("about.title")}</h1>
             <div className={s.firstLine}>
