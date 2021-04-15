@@ -30,7 +30,7 @@
     resize: none;
 }
 
-.AdminPanel>div {
+.AdminPanel>section {
     display: table-column;
     transform: scaleY(0.0);
     transition: all ease 0.7s;

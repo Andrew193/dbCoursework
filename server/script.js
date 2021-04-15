@@ -2,12 +2,13 @@ const { buildSchema } = require("graphql");
 const obj={
     Schema:buildSchema(`
     type Query {
-      getNews:[News],
+      getNews(parametr:Int):[News],
       getItems(parametr:Int):[Items],
       getSelectedNews(number:Int):News,
-      getAllPerson(name:String):[Person],
+      getAllPerson(name:String,queryMod:Boolean):[Person],
       getSize:Size,
-      getAllAuthors:[Author]
+      getAllAuthors:[Author],
+      getSizeOfNews:Size,
     }
     type Author{
         Name:String,

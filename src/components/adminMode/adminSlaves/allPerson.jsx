@@ -3,8 +3,8 @@ import Page404 from '../../404Page/Page404'
 import Loader from "../../Loader/Loader"
 import MakePersons from "./makePersons"
 function AllPerson(props) { 
-    const name=(props.name||""),{ loading, error, data } = useQuery(gql`{
-        data : getAllPerson (name:"${name}"){
+    const name=(props.name||""),queryMod=(props.queryMod||false),{ loading, error, data } = useQuery(gql`{
+        data : getAllPerson (name:"${name}",queryMod:${queryMod}){
             FullName
             Password
         }

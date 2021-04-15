@@ -1,7 +1,6 @@
 .Container{
     grid-area: main;
     padding: 5% 10% 2% 10%;
-    text-align: left;
     background-color: white;
     text-align: center;
 }
@@ -18,7 +17,7 @@
       }
 .Map{
     border: 0;
-    width: 100%;
+    width: 85%;
     height: 500px;
     border-radius: 15px 60px;
     margin: 15px;

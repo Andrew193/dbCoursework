@@ -5,9 +5,8 @@ import { gql, useQuery } from "@apollo/client";
 import ItemsMaker from "./itemsMaker"
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import Script from "./forms/sendOrder"
+import PagLine from "./pagLine";
 function OurItems(props) {
-    let In=null;
     const [page,setPage]=useState(1),{ loading, error, data } = useQuery(gql`{
         data :getItems(parametr:${page}){
            Name
@@ -25,7 +24,7 @@ function OurItems(props) {
             {error && <Page404/>}
             {loading && <Loader />}
             {!loading && <ItemsMaker t={props.t} data={data.data} s={!props.colorMode?s.Light:s.Dark}/>}
-            {data &&  <div>{page}<input type="number" style={{margin:"0px 15px"}} ref={(el)=>In=el} max={`${Script.ToRound(data.data2.Size)-1}`} onBlur={()=>setPage(In.value)} ></input>{Script.ToRound(data.data2.Size)-1}</div>}
+            {data &&  <PagLine page={page} setPage={setPage} data={data}/>}
             <h2><NavLink to={"/ourItems/regCom"} className={props.colorMode ? s.colorMode : ""}>
             {props.t("ourItems.FormCom")}</NavLink></h2>
             <h2><NavLink to={"/ourItems/regUn"} className={props.colorMode ? s.colorMode : ""}>

@@ -1,12 +1,14 @@
 .activeLink {
     color: red!important;
 }
-.Logo{
+
+.Logo {
     left: 1%;
     position: absolute;
     height: 25px;
     width: 25px;
 }
+
 .Navbar {
     grid-area: nav;
     width: 100%;
@@ -14,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow:0 10px 10px 0 rgb(60 64 67 / 30%), 0 5px 6px 2px rgb(60 64 67 / 15%);
+    box-shadow: 0 10px 10px 0 rgb(60 64 67 / 30%), 0 5px 6px 2px rgb(60 64 67 / 15%);
     position: fixed;
     background-color: white;
     z-index: 1;
@@ -34,13 +36,30 @@
     flex: auto;
 }
 
-nav {
+.Navbar nav {
     display: flex;
     justify-content: space-evenly;
     flex: auto;
 }
 
-nav>button {
+.SmallNavbar {
+    border: 1px solid white;
+    transform: skewX( -10deg);
+    padding: 7px 20px;
+    line-height: 25px;
+    position: absolute;
+    z-index: 10;
+    right: 5%;
+    top: 35%;
+}
+.SmallNavbar ul{
+    list-style-type:none;
+}
+.SmallNavbar a{
+    color: white;
+}
+
+.Navbar nav>button {
     text-align: center;
     background: linear-gradient(to right, white 50%, black 50%);
     background-size: 200% 100%;
@@ -51,7 +70,7 @@ nav>button {
     background-position: left bottom;
 }
 
-nav>button:hover {
+.Navbar nav>button:hover {
     border: 1px solid white;
     background-position: right bottom;
     color: white;
@@ -84,13 +103,14 @@ option {
     border: 1px solid rgb(255, 0, 0);
 }
 
-@media (max-width:700px){
-    .Logo{
-      display:none;
+@media (max-width:700px) {
+    .Logo {
+        display: none;
     }
-  }
-  @media (max-width:500px){
-      .Navbar{
+}
+
+@media (max-width:500px) {
+    .Navbar {
         font-size: 12px;
-      }
-  }
+    }
+}
