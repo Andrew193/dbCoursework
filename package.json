@@ -1,4 +1,5 @@
 {
+  "homepage": "https://andrew193.github.io/dbCoursework",
   "name": "work",
   "version": "0.1.0",
   "private": true,
@@ -87,7 +88,9 @@
   "scripts": {
     "start": "npm run build && (cd server && npm start)",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -108,6 +111,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "node-sass": "^5.0.0",
     "sass-loader": "^11.0.1"
   },
