@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/dbCoursework/static/css/main.232fe1b3.chunk.css",
+    "main.js": "/dbCoursework/static/js/main.3c5c1646.chunk.js",
+    "main.js.map": "/dbCoursework/static/js/main.3c5c1646.chunk.js.map",
+    "runtime-main.js": "/dbCoursework/static/js/runtime-main.dcaba257.js",
+    "runtime-main.js.map": "/dbCoursework/static/js/runtime-main.dcaba257.js.map",
+    "static/css/2.ffda3d49.chunk.css": "/dbCoursework/static/css/2.ffda3d49.chunk.css",
+    "static/js/2.90440c89.chunk.js": "/dbCoursework/static/js/2.90440c89.chunk.js",
+    "static/js/2.90440c89.chunk.js.map": "/dbCoursework/static/js/2.90440c89.chunk.js.map",
+    "static/js/3.67e74719.chunk.js": "/dbCoursework/static/js/3.67e74719.chunk.js",
+    "static/js/3.67e74719.chunk.js.map": "/dbCoursework/static/js/3.67e74719.chunk.js.map",
+    "index.html": "/dbCoursework/index.html",
+    "static/css/2.ffda3d49.chunk.css.map": "/dbCoursework/static/css/2.ffda3d49.chunk.css.map",
+    "static/css/main.232fe1b3.chunk.css.map": "/dbCoursework/static/css/main.232fe1b3.chunk.css.map",
+    "static/js/2.90440c89.chunk.js.LICENSE.txt": "/dbCoursework/static/js/2.90440c89.chunk.js.LICENSE.txt",
+    "static/media/4.118e95f4.jpg": "/dbCoursework/static/media/4.118e95f4.jpg",
+    "static/media/first.d8de8d81.jpg": "/dbCoursework/static/media/first.d8de8d81.jpg",
+    "static/media/getFetch.cjs": "/dbCoursework/static/media/getFetch.d7d6010d.cjs",
+    "static/media/loader.12b1382f.gif": "/dbCoursework/static/media/loader.12b1382f.gif",
+    "static/media/second.e9718a4f.jpg": "/dbCoursework/static/media/second.e9718a4f.jpg",
+    "static/media/third.e8bef728.webp": "/dbCoursework/static/media/third.e8bef728.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dcaba257.js",
+    "static/css/2.ffda3d49.chunk.css",
+    "static/js/2.90440c89.chunk.js",
+    "static/css/main.232fe1b3.chunk.css",
+    "static/js/main.3c5c1646.chunk.js"
+  ]
+}

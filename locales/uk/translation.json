@@ -1,0 +1,111 @@
+{
+  "title": "Загальна інформація",
+  "ok":"Операція вдала",
+  "reject":"Не знайдено",
+  "search":"Шукати",
+  "smallNav":{
+    "title":"Навігація",
+    "act1":"Карта",
+    "act2":"Телефони та E-mail"
+  },
+  "description": {
+    "more":"Докладніше",
+    "last":"Останні новини",
+    "part1": "Видавництво Kвадратне Сонце",
+    "part2": "Видавництво Kвадратне Сонце було засновано в 1999 році і до теперішнього часу перетворилося в одне з найбільших видавництв в Україні з серйозним портфелем виконаних проектів за плечима. Багата історія, міцні традиції, інноваційний комплексний підхід до вирішення завдань клієнтів і реальна турбота про результаті є основою успіху компанії і дозволяють їй динамічно розвиватися, постійно розширюючи перелік послуг, що надаються і підвищуючи їх якість.",
+    "part3": "Послуги Видавництва",
+    "part4": "Все різноманіття послуг, що надаються друкарнею, можна розділити на кілька напрямків. Довгий час однією з основних сфер діяльності була роздруківка брошур на замовлення. Пізніше акцент став зміщуватися в бік виробництва газет, візиток і листівок, а зараз ці напрямки приблизно однакові за обсягом і разом складають близько 90% всіх замовлень компанії.Решта 10% діляться між іншими друкарськими послугами.",
+    "part5": "Окремим напрямком роботи компанії є розробка власних продуктів. Цей напрямок на даний момент є швидше прикладним і розвивається в основному в рамках роботи над великими замовленнями. Результатом діяльності в цьому напрямку стало множесто разлмчний статей і журналів.",
+    "part6": "Чому Ми?",
+    "part7": "Наші консультанти - практики з багатим досвідом. Вони точно знають чого ви хочете. У кожного в скарбничці не один десяток виконаних замовлень, і в кожної щось своє, нове. Крім того, наші консультанти все мають досвід роботи всередині підприємства, кожен був або начальником служби якості, або менеджером по якості.",
+    "part8": "Lorem Ipsum",
+    "part9": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus optio reiciendis voluptatibus obcaecati velit voluptates ab deserunt ipsa, impedit fugiat sunt libero ratione eum! Ab quidem nobis dolorum! Vero, dolorum. Laboriosam commodi debitis, cumque at tenetur libero, illum illo, assumenda reprehenderit voluptates excepturi unde. Ex ipsum corporis dolores nisi esse quis at voluptas explicabo! Tempora at enim porro provident rerum?     Totam nesciunt soluta veritatis eveniet impedit reprehenderit minima. Ab tenetur quo cum voluptatibus fugit nostrum cumque, eaque aut odit labore velit, ratione ipsa. Voluptatum repellat consectetur voluptatem ipsa dolores officia. Vero, necessitatibus reiciendis commodi id placeat cumque maxime explicabo dolorum quia dolore tempore deserunt dolorem facilis quasi optio quaerat voluptatum? Deleniti, sequi temporibus itaque quaerat debitis alias consectetur obcaecati eaque."
+  },
+  "nav": {
+    "main": "Головна сторінка",
+    "about": "Про компанію",
+    "cgLg": "Перекласти",
+    "news": "Новини",
+    "contacts": "Контакти",
+    "changeStatus": "Покинути ресурс",
+    "colorMode": "Змінити кольорову гамму",
+    "ouritems": "Послуги",
+    "item": {
+      "part1": "Назва видання ",
+      "part2": "a його автор ",
+      "part3":"Кількість сторінок:",
+      "part4":"Тираж:",
+      "part5":"Код елемента:",
+      "part6":"Автори"
+    }
+  },
+  "ourItems": {
+    "FormCom": "Замовити з наявного",
+    "FormUn": "Замовити ексклюзив",
+    "Form1title": "Зробіть свій вибір",
+    "Form1C": "Що вас цікавить?",
+    "Form2C": "Яка кількість?",
+    "Form3C": "Дані доставки",
+    "Form4P": "Адреса",
+    "Form5P": "Дата",
+    "Form51P": "Контактна особа",
+    "Send":"Відправити"
+  },
+  "footer": {
+    "title": " Андрій Садовінський. Всі права захищені.",
+    "request": "Якщо у Вас виникли питання задайте їх нам!",
+    "form": {
+      "title": "Звернутися то служби підтримки",
+      "closeButton": "Відправити",
+      "field1": "Викладіть суть питання!",
+      "field2": "Введіть E-mail для зворотного зв'язку!",
+      "field3": "Топік було створено",
+      "field4": "Топік створено не було"
+    }
+  },
+  "form": {
+    "reg": "Зареєструватися",
+    "log": "Увійти",
+    "field1": "Ім'я",
+    "field2": "Пароль"
+  },
+  "navigation": {
+    "top": "Догори!",
+    "bottom": "Вниз!"
+  },
+  "about": {
+    "title": "Про нас",
+    "modal": "Натисніть, щоб закрити",
+    "close": "Закрити",
+    "tip": "Бажаєте збільшити?"
+  },
+  "contacts": {
+    "shortInfo":"Завжди з нами",
+    "mapTitle": "Ми на мапі",
+    "howToContactUs": "Як ви можете з нами зв'язатися?",
+    "email": "Написати на один з E-mail",
+    "phoneNumber": "Подзвонити по одному з номерів",
+    "address": "Прийти в один з офісів за адресою"
+  },
+  "admin": {
+    "title": "Підтвердьте свій статус Адміністратора",
+    "makeNewsTitle":"Введіть потрібні дані для створення нової новини",
+    "Form":{
+      "title":"Введіть потрібні дані для створення нової новини",
+      "field1":"Введіть заголовок",
+      "field2":"Введіть дату",
+      "field3":"Введіть суть новини"
+    },
+    "createNews":"Створити новину",
+    "showAllPerson":"Показати всіх користувачів",
+    "showByName":"Вибрати по імені",
+    "changeNews":"Підкоректувати"
+  },
+  "authors":{
+    "name":"Ім'я",
+    "age":"Вік",
+    "phone":"Номер телефону",
+    "adress":"Адреса"
+  }
+}
+
