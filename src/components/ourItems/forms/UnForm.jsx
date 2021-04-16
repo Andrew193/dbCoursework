@@ -1,4 +1,4 @@
-import s from "../style.module.css"
+import s from "../style.module.scss"
 import { useFormik } from 'formik';
 import {notify} from "../../Footer/footer"
 import Script from "./sendOrder"

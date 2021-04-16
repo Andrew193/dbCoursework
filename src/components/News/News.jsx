@@ -1,4 +1,4 @@
-import s from "./style.module.css"
+import s from "./style.module.scss"
 import MakeNews from "./makeNews"
 import Loader from "../Loader/Loader"
 import Page404 from "../404Page/Page404"

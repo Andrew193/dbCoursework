@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MdMail } from "react-icons/md";
-import s from "./style.module.css"
+import s from "./style.module.scss"
 import Script from "./script"
 import { toast } from 'react-toastify';
 import { useTranslation } from "react-i18next";

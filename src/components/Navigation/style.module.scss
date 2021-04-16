@@ -1,0 +1,171 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@mixin DflexGeneral() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.activeLink {
+    color: red !important;
+}
+
+.Logo {
+    left: 1%;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    -webkit-animation-name: rotateLogo;
+    animation-name: rotateLogo;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+@-webkit-keyframes rotateLogo {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotateLogo {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+.Navbar {
+    grid-area: nav;
+    width: 100%;
+    min-height: 7%;
+    @include DflexGeneral();
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-shadow: 0 10px 10px 0 rgba(60, 64, 67, 0.3), 0 5px 6px 2px rgba(60, 64, 67, 0.15);
+    box-shadow: 0 10px 10px 0 rgba(60, 64, 67, 0.3), 0 5px 6px 2px rgba(60, 64, 67, 0.15);
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    & > ul {
+        list-style-type: none;
+        @include DflexGeneral();
+        min-width: 50%;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
+        flex: auto;
+    }
+    nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
+        flex: auto;
+        & > button {
+            text-align: center;
+            background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, black));
+            background: -o-linear-gradient(left, white 50%, black 50%);
+            background: linear-gradient(to right, white 50%, black 50%);
+            background-size: 200% 100%;
+            color: black;
+            cursor: pointer;
+            padding: 1%;
+            -webkit-transition: all ease 0.7s;
+            -o-transition: all ease 0.7s;
+            transition: all ease 0.7s;
+            background-position: left bottom;
+            &:hover {
+                border: 1px solid white;
+                background-position: right bottom;
+                color: white;
+            }
+        }
+    }
+}
+
+.colorMode {
+    color: white;
+}
+
+.SmallNavbar {
+    border: 1px solid white;
+    -webkit-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    padding: 7px 20px;
+    line-height: 25px;
+    position: absolute;
+    z-index: 10;
+    right: 5%;
+    top: 35%;
+    ul {
+        list-style-type: none;
+    }
+    a {
+        color: white;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all ease 0.7s;
+    -o-transition: all ease 0.7s;
+    transition: all ease 0.7s;
+}
+
+option {
+    cursor: pointer;
+}
+
+.ToggleLg {
+    margin: 7px 13px;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    -webkit-transition: all ease 0.7s;
+    -o-transition: all ease 0.7s;
+    transition: all ease 0.7s;
+    @include DflexGeneral();
+    padding: 7px;
+    &:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        border: 1px solid rgb(255, 0, 0);
+    }
+}
+
+@media (max-width: 700px) {
+    .Logo {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .Navbar {
+        font-size: 12px;
+    }
+}

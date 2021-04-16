@@ -1,4 +1,4 @@
-import s from "../style.module.css"
+import s from "../style.module.scss"
 import { gql, useQuery } from "@apollo/client";
 import OptMaker from "./optionMaker"
 import Loader from "../../Loader/Loader"

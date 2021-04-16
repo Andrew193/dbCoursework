@@ -1,4 +1,4 @@
-import s from "./style.module.css"
+import s from "./style.module.scss"
 import Script from "./script"
 import { useHistory } from "react-router";
 const { v4: uuidv4 } = require('uuid');

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import s from "../style.module.css"
+import s from "../style.module.scss"
 import Script from "./script"
 function CgLg(props) {
     const [flag,setFlag]=useState(false),dispatch=useDispatch()

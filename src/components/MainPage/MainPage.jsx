@@ -1,4 +1,4 @@
-import s from "./style.module.css"
+import s from "./style.module.scss"
 import Script from "./Script"
 import { NavLink } from "react-router-dom"
 import LastNews from "./lastNews"

@@ -1,4 +1,4 @@
-import s from "./style.module.css"
+import s from "./style.module.scss"
 const { v4: uuidv4 } = require('uuid');
 function Maker(props) {
     return (<>{props.data.map((value) => <div className={s.NewsItem + " " + props.s} key={uuidv4()} >

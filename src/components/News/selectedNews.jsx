@@ -1,4 +1,4 @@
-import s from "./style.module.css"
+import s from "./style.module.scss"
 import { gql, useQuery } from "@apollo/client";
 import Loader from "../Loader/Loader"
 import Page404 from "../404Page/Page404"

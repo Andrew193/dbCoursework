@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
-import s from "./style.module.css"
+import s from "./style.module.scss"
 import { BsFillBrightnessHighFill } from "react-icons/bs";
 import ChangeLg from "./changeLg/changeLg"
 function Nav(props) {

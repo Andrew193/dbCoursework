@@ -1,0 +1,57 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.Container {
+  grid-area: main;
+  padding: 5% 10% 2% 10%;
+  background-color: white;
+  text-align: center;
+}
+
+@media (max-width: 970px) {
+  .Container {
+    padding: 12% 10% 2% 10% !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .Container {
+    font-size: 12px;
+    padding: 15% 10% 2% 10% !important;
+  }
+}
+
+.Map {
+  border: 0;
+  width: 85%;
+  height: 500px;
+  border-radius: 15px 60px;
+  margin: 15px;
+}
+
+.Contacts {
+  ul {
+    margin: 2%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  li {
+    a {
+      color: white;
+    }
+
+    &:hover > a {
+      color: gray;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.Container {
+  grid-area: main;
+  padding: 5% 10% 2% 10%;
+  text-align: left;
+  background-color: white;
+  text-align: center;
+
+  form > p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 2.5% 10% 2.5% 10%;
+  }
+
+  select {
+    outline: none;
+    cursor: pointer;
+  }
+
+  input {
+    outline: none;
+  }
+}
+
+.colorMode {
+  color: white;
+}
+
+.NewsItem {
+  margin: 5% 0px 2% !important;
+  padding: 1%;
+
+  &:nth-child(2n) {
+    border-radius: 10px 20px;
+  }
+
+  &:nth-child(2n + 1) {
+    border-radius: 20px 10px;
+  }
+}
+
+.colorMode:hover {
+  color: red;
+}
+
+.Light {
+  background: -webkit-gradient(linear, right top, left top, from(#686868), color-stop(#000), to(#686868));
+  background: -o-linear-gradient(right, #686868, #000, #686868);
+  background: linear-gradient(270deg, #686868, #000, #686868);
+  color: rgb(255, 255, 255);
+  margin: 4px 10px;
+}
+
+.Item {
+  margin: 4px 5px;
+}
+
+.Dark {
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(rgb(255, 255, 255)),
+    color-stop(rgb(0, 0, 0)),
+    to(rgb(255, 255, 255))
+  );
+  background: -o-linear-gradient(right, rgb(255, 255, 255), rgb(0, 0, 0), rgb(255, 255, 255));
+  background: linear-gradient(270deg, rgb(255, 255, 255), rgb(0, 0, 0), rgb(255, 255, 255));
+  color: rgb(255, 255, 255);
+  margin: 4px 10px;
+}
+
+@media (max-width: 970px) {
+  .Container {
+    padding: 12% 10% 2% 10% !important;
+  }
+}
+
+@media (min-width: 970px) {
+  .NewsItem {
+    margin: 2% 0px 2% !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .Container {
+    font-size: 12px;
+    padding: 15% 10% 2% 10% !important;
+  }
+}

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import "./translete.js"
 import { useTranslation } from "react-i18next";
 import { useFormik } from 'formik';

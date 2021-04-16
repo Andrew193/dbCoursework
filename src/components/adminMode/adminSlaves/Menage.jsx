@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import { useState } from "react";
 import { notify } from "../../Footer/footer"
 import Script from "../script"
-import s from "../style.module.css"
+import s from "../style.module.scss"
 import AllPerson from "./allPerson"
 import CorNews from "./corNews";
 import MForm from "./menageForm"

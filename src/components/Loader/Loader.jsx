@@ -1,5 +1,5 @@
 import img from "./loader.gif"
-import s from "./style.module.css"
+import s from "./style.module.scss"
 function Loader() {
     return(
         <div className={s.Container}>

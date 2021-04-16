@@ -1,0 +1,39 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.App {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "nav" "main" "footer";
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: min-content auto min-content;
+  grid-template-rows: -webkit-min-content auto -webkit-min-content;
+  grid-template-rows: min-content auto min-content;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.NightMode {
+  background-color: black !important;
+  color: white;
+
+  button {
+    color: black;
+  }
+}
+
+@media (max-width: 570px) {
+  button {
+    font-size: 10px !important;
+    margin: 10px !important;
+  }
+}

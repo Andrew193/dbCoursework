@@ -1,0 +1,44 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.Container {
+  grid-area: main;
+  padding: 5% 10% 2% 10%;
+  text-align: left;
+  background-color: white;
+  text-align: center;
+}
+
+.NewsItem {
+  margin: 15px 20px;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+}
+
+.Light {
+  background-color: white;
+  color: black;
+}
+
+.Dark {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 970px) {
+  .Container {
+    padding: 12% 10% 2% 10% !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .Container {
+    font-size: 12px;
+    padding: 15% 10% 2% 10% !important;
+  }
+}

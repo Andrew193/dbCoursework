@@ -2,7 +2,7 @@ import Map from "./map"
 import PhoneList from "./phoneList"
 import EmailList from "./emailList"
 import AddressList from "./AddressList"
-import s from "./style.module.css"
+import s from "./style.module.scss"
 import SmallNavbar from "../Navigation/primeNavbar"
 function Contact(props) {
     return(

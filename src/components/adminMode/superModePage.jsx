@@ -1,4 +1,4 @@
-import s from "./style.module.css"
+import s from "./style.module.scss"
 import { useSelector } from 'react-redux';
 import { Redirect } from "react-router";
 import MakeNewNews from "./adminSlaves/Menage"

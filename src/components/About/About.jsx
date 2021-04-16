@@ -4,7 +4,7 @@ import im2 from "./img/second.jpg"
 import im3 from "./img/third.webp"
 import im4 from "./img/4.jpg"
 import Script from "./script"
-import s from "./style.module.css"
+import s from "./style.module.scss"
 function About(props) {
     const [flag,setFlag]=useState(false)
     let moreBlock=React.createRef()
