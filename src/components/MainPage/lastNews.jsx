@@ -10,6 +10,7 @@ function LastNews(props) {
             title
             date
             message
+            idnews
         }
       }
     `)

@@ -20,9 +20,11 @@ const obj={
       Size:Int
     }
     type News{
+        idnews:Int
         title:String,
         date:String,
-        message:String
+        message:String,
+        show:Boolean
     }
     type Person{
       FullName:String, 

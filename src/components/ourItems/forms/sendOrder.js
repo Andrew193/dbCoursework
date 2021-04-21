@@ -22,6 +22,9 @@ const obj={
         }
         
         return value/10
-      }
+      },
+    confirmInput:(value,maxAvailable,setInputValue)=>{
+        parseInt(value)<1?setInputValue(1):parseInt(value)>=maxAvailable?setInputValue(maxAvailable):setInputValue(value)
+    }
 }
 export default obj;

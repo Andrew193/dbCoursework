@@ -7,6 +7,16 @@
 //     return obj
 // }
 const obj={
+    ChangeVis:(notify,id,t)=>{
+        fetch("/changeVis",{
+            method:"POST",
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body:JSON.stringify({id:id})
+        }).then((response)=>response.json())
+        .then((result)=>result.done?notify(t("ok")):notify(t("not")))
+    },
     Ord:(notify,values,t,resetForm)=>fetch("/makeNews",{
         method: 'POST',
         headers: {

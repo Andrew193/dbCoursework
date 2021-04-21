@@ -64,7 +64,17 @@
 .Item {
   margin: 4px 5px;
 }
-
+.bottomNav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  >li:not(:last-of-type){
+    border-right: 2px solid rgb(116, 83, 83);
+  }
+  >li{
+    flex-grow: 1;
+  }
+}
 .Dark {
   background: -webkit-gradient(
     linear,

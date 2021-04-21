@@ -6,19 +6,19 @@ import { gql, useQuery } from "@apollo/client";
 import PagLine from "../ourItems/pagLine";
 import { useState } from "react";
 function News(props) {
-    const [page,setPage]=useState(1)
-    const { loading, error, data } = useQuery(gql`{
+    const [page,setPage]=useState(1),
+    { loading, error, data } = useQuery(gql`{
         data : getNews(parametr:${page}){
             title
             date
             message
+            idnews
         }
         data2:getSizeOfNews{
             Size
         }
       }
     `)
-    console.log(data,error);
     return (
         <div className={props.colorMode ? s.Container + " " + props.NightMode : s.Container}>
             {error && <Page404 />}

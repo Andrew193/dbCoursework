@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Script from "./forms/sendOrder"
 
 function PagLine(props) {
+    const maxSize=Script.ToRound(props.data.data2.Size),
+    [inputValue,setInputValue]=useState(1)
     return (
-        <div>{props.page}<input type="number" style={{ margin: "0px 15px" }} max={`${Script.ToRound(props.data.data2.Size) - 1}`} onBlur={(e) => props.setPage(e.target.value)} ></input>{Script.ToRound(props.data.data2.Size) - 1}</div>
+        <div>{props.page}<input value={inputValue} type="number" style={{ margin: "0px 15px" }} max={`${maxSize}`} onInput={(e)=>Script.confirmInput(e.target.value,maxSize,setInputValue)} onBlur={(e) => props.setPage(e.target.value)} ></input>{maxSize}</div>
     )
 }
 export default PagLine;

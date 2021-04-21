@@ -1,4 +1,3 @@
-debugger
 let initState=(JSON.parse(localStorage.getItem("isAdmin"))?.isAdmin)?
 {isAdmin:JSON.parse(localStorage.getItem("isAdmin"))?.isAdmin}:{isAdmin:false}
 function Reducer(state=initState,action) {
