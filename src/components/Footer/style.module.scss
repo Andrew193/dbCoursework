@@ -92,7 +92,11 @@
     }
   }
 }
-
+@media (min-width:2000px){
+  .Container{
+    font-size: 30px;
+  }
+}
 @media (max-width: 500px) {
   .Container {
     font-size: 12px;

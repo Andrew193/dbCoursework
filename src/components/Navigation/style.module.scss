@@ -111,16 +111,10 @@
 }
 
 .SmallNavbar {
-    border: 1px solid white;
-    -webkit-transform: skewX(-10deg);
-    -ms-transform: skewX(-10deg);
-    transform: skewX(-10deg);
+    border: 1px solid #fff;
+    height: fit-content;
     padding: 7px 20px;
-    line-height: 25px;
-    position: absolute;
-    z-index: 10;
-    right: 5%;
-    top: 35%;
+    text-align: center;
     ul {
         list-style-type: none;
     }
@@ -158,6 +152,16 @@ option {
     }
 }
 
+@media (min-width: 2000px) {
+    .Navbar {
+        font-size: 30px;
+    }
+}
+@media (max-width:970px){
+    .SmallNavbar{
+
+    }
+}
 @media (max-width: 700px) {
     .Logo {
         display: none;
@@ -166,6 +170,6 @@ option {
 
 @media (max-width: 500px) {
     .Navbar {
-        font-size: 12px;
+        font-size: 10px;
     }
 }

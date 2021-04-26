@@ -24,10 +24,11 @@ function ComForm(props) {
             Script.Ord(notify,values,props.t,resetForm,"/makeOrOrder")
       }})
     return (
-        <div className={props.colorMode ? s.Container + " " + props.NightMode : s.Container}>
+        <div className={props.colorMode ? s.Container + " " + props.NightMode : s.Container} 
+        style={{display:"flex",alignItems:"center"}}>
             {loading && <Loader />}
             {error && <Page404 />}
-            {!loading && <form onSubmit={Formik.handleSubmit}>
+            {!loading && <form onSubmit={Formik.handleSubmit} style={{flexGrow:"1"}}>
                 <p>
                     <h2>{props.t("ourItems.Form1C")}</h2>
                     <select name="ItemName" id="ItemName" {...Formik.getFieldProps("ItemName")}>

@@ -30,11 +30,7 @@ const obj = {
           resetForm()
       },
     submit:(values,notify,resetForm) => {
-        if (JSON.parse(localStorage.getItem("regMode")).Flag) {
-            obj.Reg(values.name, values.password).then((parametr)=>obj.adder(parametr,resetForm,values,notify))
-        } else{
-            obj.Log(values.name, values.password).then((parametr)=>obj.adder(parametr,resetForm,values,notify))
-        }
+        JSON.parse(localStorage.getItem("regMode")).Flag?obj.Reg(values.name, values.password).then((parametr)=>obj.adder(parametr,resetForm,values,notify)):obj.Log(values.name, values.password).then((parametr)=>obj.adder(parametr,resetForm,values,notify))
         localStorage.removeItem("regMode")
       }
 }

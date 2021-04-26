@@ -8,20 +8,16 @@ const obj={
         :values.ad, date:values.date, person:values.person })
     }).then((response)=>response.json())
     .then((result)=>{
-        if(result.done)
-        notify(t("footer.form.field3"))
-        else
-        notify(t("footer.form.field4"))
-
+        result.done?notify(t("footer.form.field3")):notify(t("footer.form.field4"))
         resetForm()
     }),
     ToRound:function decimalAdjust(value) {
-        if(value%10!=0){
-            while (value%10!=0) 
-                value+=1
+        let clone=value
+        if(clone%10!=0){
+            while (clone%10!=0) 
+            clone+=1
         }
-        
-        return value/10
+        return clone/10
       },
     confirmInput:(value,maxAvailable,setInputValue)=>{
         parseInt(value)<1?setInputValue(1):parseInt(value)>=maxAvailable?setInputValue(maxAvailable):setInputValue(value)

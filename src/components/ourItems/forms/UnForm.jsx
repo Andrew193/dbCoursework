@@ -15,8 +15,8 @@ function UnForm(props) {
             Script.Ord(notify,values,props.t,resetForm,"/makeUnOrder")
       }})
     return(
-        <div className={props.colorMode? s.Container+" "+props.NightMode:s.Container}>
-            <form onSubmit={Formik.handleSubmit}>
+        <div className={props.colorMode? s.Container+" "+props.NightMode:s.Container} style={{display:"flex",alignItems:"center"}}>
+            <form onSubmit={Formik.handleSubmit} style={{flexGrow:"1"}}>
                 <p>
                     <h2>{props.t("ourItems.Form1C")}</h2>
                     <input type="text" name="ItemName" id="ItemName" {...Formik.getFieldProps("ItemName")}>

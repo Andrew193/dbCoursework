@@ -7,7 +7,7 @@
 
 .Container {
   grid-area: main;
-  padding: 5% 10% 2% 10%;
+  padding: 7% 10% 2% 10%;
   text-align: left;
   background-color: white;
 
@@ -125,7 +125,15 @@
     text-align: right;
   }
 }
-
+@media(min-width:2300px){
+  .firstLine {
+    img {
+      height: 510px !important;
+      width: 100% !important;
+    }
+    font-size: 28px;
+  }
+}
 @media (max-width: 1070px) {
   .Container {
     padding: 12% 10% 2% 10% !important;
@@ -184,7 +192,7 @@
 @media (max-width: 490px) {
   .Container {
     font-size: 12px;
-    padding: 15% 0% 2% 0% !important;
+    padding: 15% 5% 2% 0% !important;
   }
 
   .firstLine > section {
@@ -218,3 +226,19 @@
     }
   }
 }
+@media (max-width: 425px) {
+.Container{
+  font-size: 10px;
+  padding: 25% 5% 2% 0% !important;
+}
+h1{
+  font-size: 16px;
+}
+.firstLine {
+  img {
+    height:175px !important;
+    width: 100% !important;
+  }
+}
+}
+
