@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Course project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my course work. It's basically a website with a nodeJs-based backend. I have used a variety of technologies and tools to write this work. I used some of them for the first time. For example GraphQl, Formik, SCSS. Certain conditions were put forward for the work. I will not list them.
 
-## Available Scripts
+## Installation
+Use the ```git clone https://github.com/Andrew193/dbCoursework``` command to have a local copy of the repository and
+then use the package manager [npm](https://www.npmjs.com/) to install dependencies. You are free to choose any other package manager if you do not have or you are not satisfied with npm. In this case, you will need to use the appropriate commands.
 
-In the project directory, you can run:
+```bash
+npm install
+```
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+MySql database is used for work. You can find it as an archive in the root of the project (db.rar). To use it, you need to make changes to ```server / script.js``` in the ```init``` object. Now run the ```npm start``` command and go to [http://localhost:5000/](http://localhost:5000/) to the home page.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+There are over 10 pages in total. There is support for dark theme and translation. The data is cached in LocalStorage, and due to this, some settings are saved across page, reloads and repeated visits to the site. There is a primitive admin panel. To enter the admin panel, according to the requirements of the project, you need to go to the address ```http: // localhost: 5000 / test / rest / props / masket / logAdmin``` and enter the password in the appropriate field. Password: ```sup21-admin65-mode96-acse34```. Admin can change and view some information
 
-### `npm test`
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
